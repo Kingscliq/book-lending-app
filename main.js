@@ -80,14 +80,15 @@ class Book {
     /////////////////////////////////////////////////////////////
     static addBookToStore(book){
         const book1 = new Book(
-            'Book One', 
+            'Book Four', 
             'LivingStone',
             'health', 
             'RTEY$%^U&*', 
             'a book about health', 
             false
         )
-        library.push(book1)
+        library.push(book1);
+        console.log(library)
       
 
     }
@@ -129,11 +130,11 @@ console.log('///////////////////////////////////////////////');
     Book.displayAvailableBooks();
  
     console.log('\n\n')
-    
+
 console.log('//////////////////////////////////////');
 console.log('Here is a list of a book that is recently added to the list');
 console.log('///////////////////////////////////////////////');
-// Book.addBookToStore();
+Book.addBookToStore();
 
 
 
