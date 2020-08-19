@@ -90,9 +90,10 @@ class Book {
         library.push(book1);
         const storedBooks = library;
             storedBooks.forEach((book, index) => {
+                var lastItem = book.length - 1;
                 console.log(`Name: ${book.title} ---- Author: ${book.author} --- Category: ${book.category}`)
             });
-        console.log()
+       
       
 
     }
@@ -136,6 +137,6 @@ console.log('///////////////////////////////////////////////');
     console.log('\n\n')
 
 console.log('//////////////////////////////////////');
-console.log('Here is a list of a book that is recently added to the list');
+console.log('Here is a list of updated library after adding a book to the list');
 console.log('///////////////////////////////////////////////');
 Book.addBookToStore();
