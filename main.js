@@ -1,7 +1,7 @@
 
 var library = [
     { 
-    title: 'Book One',
+    title: 'The Healing power of the Breath',
     author: ['Livingstone James'],
     category: 'health',
     isbn: '345ERTGF',
@@ -9,7 +9,7 @@ var library = [
     borrowed : false
 },
 {
-    title: 'Book Two',
+    title: 'The Race',
     author: ['James Bond'],
     category: 'Sports',
     isbn: '345Er454',
@@ -17,7 +17,7 @@ var library = [
     borrowed : true
 },
 {
-    title: 'Book Three',
+    title: 'The Power of Music',
     author: ['Peter Square'],
     category: 'Music',
     isbn: '345E4567',
@@ -56,7 +56,7 @@ class Book {
             
         const storedBooks = library;
         storedBooks.forEach((book) => {
-            console.log(book)
+            console.log(`${book.title} ---- ${book.author}`)
         })
 
 
@@ -80,7 +80,7 @@ class Book {
     /////////////////////////////////////////////////////////////
     static addBookToStore(book){
         const book1 = new Book(
-            'Book Four', 
+            'Quality Health', 
             'LivingStone',
             'health', 
             'RTEY$%^U&*', 
@@ -88,7 +88,11 @@ class Book {
             false
         )
         library.push(book1);
-        console.log(library)
+        const storedBooks = library;
+            storedBooks.forEach((book, index) => {
+                console.log(`Name: ${book.title} ---- Author: ${book.author} --- Category: ${book.category}`)
+            });
+        console.log()
       
 
     }
@@ -135,50 +139,3 @@ console.log('//////////////////////////////////////');
 console.log('Here is a list of a book that is recently added to the list');
 console.log('///////////////////////////////////////////////');
 Book.addBookToStore();
-
-
-
-
-// const book2 = new Book(
-    //     'Book Two', 
-    //     'Chris Doe',
-    //     'computer scince', 
-    //     'RTE^&UTRYUIU', 
-    //     'a book to get the hell out of javascript', 
-    //     true
-    // );
-
-    // console.log(book1)
-//     showAllBooks(){
-
-
-//        const newBook = new Book('computer', 'Javascript Ninja', 'RT3463TGH', 'this is a book that will get your ass of Javascript', 'Kingsley Ajaezo', true )
-//         books.push(newBook)   
-//     } 
-//     //method to show Book List
-//     showBookInfo(){
-//         console.log(books)
-        
-//     }
-    
-//     //method to add Books
-      
-//     // Method to show all books
-//     // showAllBooks(){
-        
-//     // }
-    
-// }
-
-
-
-
-
-// this.addBook = addBookToList;
-//         this.showInfo = showBookInfo;
-//         this.borrowBook = borrowBookFromList;
-// const lentBooks = [];
-// const returnedBooks = [];
-
-
-
